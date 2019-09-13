@@ -1,0 +1,14 @@
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.deps.json
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.runtimeconfig.json
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.runtimeconfig.dev.json
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.dll
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.pdb
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.csprojAssemblyReference.cache
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.csproj.CoreCompileInputs.cache
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.RazorAssemblyInfo.cache
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.RazorAssemblyInfo.cs
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.AssemblyInfoInputs.cache
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.AssemblyInfo.cs
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.RazorTargetAssemblyInfo.cache
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.dll
+C:\Users\SUPORTE\Documents\Projetos\aspangular\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.pdb

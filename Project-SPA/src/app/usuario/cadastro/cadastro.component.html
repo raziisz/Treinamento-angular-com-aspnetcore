@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="jumbotron text-center bg-white">
+    <h3 class="space">Cadastro QuickBuy</h3>
+    <form [formGroup]="cadForm">
+      <div class="row">
+        <div class="col-6 offset-3 mb-3 mt-3">
+          <label class="sr-only">Email</label>
+          <input type="text" class="form-control" formControlName="email"
+            placeholder="Digite seu email..."
+             [ngClass]="{'is-invalid': cadForm.get('email').errors 
+             && cadForm.get('email').touched,
+            'is-valid': !cadForm.get('email').errors}">
+            <div class="invalid-feedback mb-0" *ngIf="cadForm.get('email').hasError('required') &&
+            cadForm.get('email').touched ">
+              O campo email não pode ficar vazio
+            </div>
+            <div class="invalid-feedback" *ngIf="cadForm.get('email').hasError('email') &&
+            cadForm.get('email').touched ">
+              Este email é invalido
+            </div>
+        </div>
+        <div class="col-6 offset-3 mb-3 mt-1">
+            <label class="sr-only">Senha</label>
+            <input type="password" class="form-control" formControlName="senha"
+              placeholder="Digite sua senha..."
+               [ngClass]="{'is-invalid': cadForm.get('senha').errors 
+               && cadForm.get('senha').touched,
+              'is-valid': !cadForm.get('senha').errors}">
+              <div class="invalid-feedback mb-0" *ngIf="cadForm.get('senha').hasError('required') &&
+              cadForm.get('email').touched ">
+                O campo senha não pode ficar vazio
+              </div>
+              <div class="invalid-feedback" *ngIf="cadForm.get('senha').hasError('minlength') &&
+              cadForm.get('senha').touched ">
+                Sua senha deve ter no mínimo 4 dígitos
+              </div>
+              <div class="invalid-feedback" *ngIf="cadForm.get('senha').hasError('maxlength') &&
+              cadForm.get('senha').touched ">
+                Sua senha deve ter no máximo 8 dígitos
+              </div>
+          </div>
+          <div class="col-6 offset-3 mb-3 mt-1">
+              <label class="sr-only">Confirmar senha</label>
+              <input type="password" class="form-control" formControlName="confirmarSenha"
+                placeholder="Digite sua senha novamente..."
+                 [ngClass]="{'is-invalid': (cadForm.get('confirmarSenha').errors ||
+                 cadForm.hasError('Senha diferente')) 
+                 && cadForm.get('confirmarSenha').touched,
+                'is-valid': !cadForm.get('confirmarSenha').errors && !cadForm.hasError('Senha diferente')}">
+                <div class="invalid-feedback" *ngIf="cadForm.get('confirmarSenha').hasError('required') &&
+                cadForm.get('confirmarSenha').touched ">
+                  O campo  não pode ficar vazio
+                </div>
+                <div class="invalid-feedback" *ngIf="cadForm.hasError('Senha diferente') &&
+                cadForm.get('confirmarSenha').touched ">
+                  Senhas distintas
+                </div>
+            </div>
+            <div class="col-6 offset-3 mb-3 mt-1">
+                <label class="sr-only">Nome</label>
+                <input type="text" class="form-control" formControlName="nome"
+                  placeholder="Digite seu nome..."
+                   [ngClass]="{'is-invalid': cadForm.get('nome').errors 
+                   && cadForm.get('nome').touched,
+                  'is-valid': !cadForm.get('nome').errors}">
+                  <div class="invalid-feedback mb-0" *ngIf="cadForm.get('nome').hasError('required') &&
+                  cadForm.get('nome').touched ">
+                    O campo nome não pode ficar vazio
+                  </div>
+              </div>
+              <div class="col-6 offset-3 mb-3 mt-1">
+                  <label class="sr-only">Sobrenome</label>
+                  <input type="text" class="form-control" formControlName="sobreNome"
+                    placeholder="Digite seu sobrenome..."
+                     [ngClass]="{'is-invalid': cadForm.get('sobreNome').errors 
+                     && cadForm.get('sobreNome').touched,
+                    'is-valid': !cadForm.get('sobreNome').errors}">
+                    <div class="invalid-feedback mb-0" *ngIf="cadForm.get('sobreNome').hasError('required') &&
+                    cadForm.get('sobreNome').touched ">
+                      O campo sobrenome não pode ficar vazio
+                    </div>
+              </div>
+              <div class="col-6 offset-3 mb-3 mt-1">
+                  <button class="btn btn-primary btn-block" (click)="cadastrar()"
+                  [disabled]="!cadForm.valid && !ativarSpinner">
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                  *ngIf="ativarSpinner"></span>
+                  SALVAR
+                </button>
+                <a [routerLink]="['/login']">Voltar</a>
+              </div>
+      </div>
+    </form>
+    <img src="../../../assets/quick-logo.jpg" alt="">
+  </div>
+</div>
